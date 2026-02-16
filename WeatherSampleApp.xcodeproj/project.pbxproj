@@ -32,8 +32,8 @@
 		139E2D1A2F3F49A9006841E1 = {
 			isa = PBXGroup;
 			children = (
-				139E2D252F3F49A9006841E1 /* WeatherSampleApp */,
 				139E2D242F3F49A9006841E1 /* Products */,
+				139E2D252F3F49A9006841E1 /* WeatherSampleApp */,
 			);
 			sourceTree = "<group>";
 		};
