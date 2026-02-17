@@ -21,15 +21,17 @@ struct ContentView: View {
                         .foregroundColor(.red)
                 }else{
                     List(viewModel.posts) { post in
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text(post.title)
-                                .font(.headline)
-                            
-                            Text(post.body)
-                                .font(.subheadline)
-                                .foregroundStyle(.secondary)
+                        NavigationLink(destination: PostDetailView(post: post)){
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text(post.title)
+                                    .font(.headline)
+                                
+                                Text(post.body)
+                                    .font(.subheadline)
+                                    .foregroundStyle(.secondary)
+                            }
+                            .padding(.vertical, 4)
                         }
-                        .padding(.vertical, 4)
                     }.refreshable {
                         viewModel.fetchPosts()
                     }
