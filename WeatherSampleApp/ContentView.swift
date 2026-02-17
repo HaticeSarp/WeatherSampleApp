@@ -30,6 +30,8 @@ struct ContentView: View {
                                 .foregroundStyle(.secondary)
                         }
                         .padding(.vertical, 4)
+                    }.refreshable {
+                        viewModel.fetchPosts()
                     }
                 }
             }.navigationTitle("Posts")
