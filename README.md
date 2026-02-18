@@ -6,12 +6,15 @@ A simple iOS application built with **SwiftUI** that fetches data from a REST AP
 
 ## 🚀 Features
 
-- Fetch data from a public REST API
-- JSON decoding with `Codable`
-- Clean MVVM architecture
-- SwiftUI List UI
-- Loading & error state handling
-- URLSession networking layer
+- Fetch posts from remote API
+- MVVM Architecture
+- URLSession networking
+- Loading state handling
+- Error state handling
+- Pull to refresh
+- NavigationStack-based navigation
+- Post Detail Screen
+- MainActor for safe UI updates
 
 ---
 
@@ -34,6 +37,9 @@ The project follows the MVVM pattern:
 - **Service** → `PostService.swift`
 - **ViewModel** → `PostViewModel.swift`
 - **View** → `ContentView.swift`
+- **Views**
+  - `ContentView.swift`
+  - `PostDetailView.swift`
 
 ---
 
@@ -56,6 +62,7 @@ This project was created to practice:
 - MVVM architecture
 - State management in SwiftUI
 - Clean code structure
+- Navigation between screens
 
 ---
 
